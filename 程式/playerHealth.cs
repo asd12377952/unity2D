@@ -85,17 +85,17 @@ public class playerHealth : MonoBehaviour {
 	}
 	
 	//碰撞到怪物或是陷阱時受到傷害,若只有碰撞傷害若玩家不動就只會觸發一次
-	void OnCollisionStay (Collision other){
+	/*void OnCollisionStay (Collision other){
 		if(other.collider.tag == "enemy" || other.collider.tag == "trap"){
 			if(canGetHurt && !dead){
 				canGetHurt = false;
 				GetComponent<AudioSource>().PlayOneShot(hitSound);
-				GameData.hp -= 50;
+				GameData.hp -= (50-def);
 				StartCoroutine(checkHealth());
 				StartCoroutine(resetCanHurt());
 			}
 		}
-	}
+	}*/
 	
 	//重製可以受到傷害的各種數值與設定
 	//受到傷害時變為紅色(1.0f,0.5f,0.5f,1.0f)就是CMYK
