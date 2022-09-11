@@ -4830,13 +4830,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3802913703879690152, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
+      propertyPath: shuttime
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690153, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: m_Name
       value: boss
       objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690159, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: health
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690162, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: m_RootOrder
@@ -4844,11 +4848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690162, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690162, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 3802913703879690162, guid: 0a7668ef65f469c4ebb2dd9f27e7e2b4, type: 3}
       propertyPath: m_LocalPosition.x

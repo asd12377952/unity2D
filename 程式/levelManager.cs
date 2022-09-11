@@ -6,8 +6,7 @@ using System.IO;
 public class levelManager : MonoBehaviour {
 
 	public string nextLevel;
-	public GameObject boss;
-	
+		
 	void Start () {
 		gameObject.SetActive(false);
 	}

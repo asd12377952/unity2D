@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4dba7f1d6c3ac478318b9e0dd980b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crawlSpeed: 4
+  crawlSpeed: 6
   crawl:
   - {fileID: 1419870479, guid: 37e3810cbbeeb3743be0cb53290bf953, type: 3}
   - {fileID: -1300521898, guid: 37e3810cbbeeb3743be0cb53290bf953, type: 3}

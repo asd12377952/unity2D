@@ -14,6 +14,7 @@ public class redguy : MonoBehaviour {
 	public GameObject enemyBullet;
 	public float bulletSpeed = 16.0f;
 	public Transform bulletPosition;
+	public float shuttime = 0.5f;
 	
 	//各種變量
 	private CharacterController controller;
@@ -121,7 +122,7 @@ public class redguy : MonoBehaviour {
 		counter = 0.0f;
 		i = 0;
 		//發射前會稍微等待一下下讓玩家注意到
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(shuttime);
 		//撥放射擊音效
 		GetComponent<AudioSource>().PlayOneShot(shootSound);
 		//產生子彈
@@ -133,7 +134,7 @@ public class redguy : MonoBehaviour {
 			bullet.GetComponent<Rigidbody>().velocity = new Vector3(bulletSpeed,0,0);
 		}
 		//發射完後也要有空檔準備再次觸發射擊條件
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(shuttime);
 		shooting = false;
 	}
 }
