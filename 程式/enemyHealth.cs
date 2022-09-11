@@ -39,8 +39,9 @@ public class enemyHealth : MonoBehaviour {
 	//與玩家相同受到傷害時也會加上紅色來表示現在是受到傷害的狀態
 	public IEnumerator resetColor () {
 		var old = rend.color;
+		yield return new WaitForSeconds (0.1f);
 		rend.color = new Color(1.0f,0.25f,0.25f,0.5f);
-		yield return new WaitForSeconds (0.125f);
+		yield return new WaitForSeconds (0.1f);
 		rend.color = old;
 	}
 }
