@@ -141,6 +141,6 @@ public class playerHealth : MonoBehaviour {
 		if(GameData.hp > 250){
 			GameData.hp = 250;
 		}
-		
+		Hurt.sizeDelta = new Vector2(GameData.hp, Hurt.sizeDelta.y);
 	}
 }
