@@ -8,6 +8,8 @@ public class facecrawl : MonoBehaviour {
 	//貼圖動畫
 	public Sprite[] crawl;
 	//各種變量
+	public bool canJump =false;
+
 	private CharacterController controller;
 	private float counter = 0.0f;
 	private int i = 0;
@@ -37,10 +39,15 @@ public class facecrawl : MonoBehaviour {
 	void Update () {
 		//重力
 		if(!controller.isGrounded){
-			vel.y -= Time.deltaTime*80;
+			vel.y -= Time.deltaTime*40;
 		}else{
 			vel.y = -1;
 		}
+
+		if(Random.Range(0,100)==50 && controller.isGrounded && canJump){
+            vel.y = 12.0f;
+        }
+
 		//檢查玩家接近怪物之間的距離
 		float distance = target.transform.position.x - transform.position.x;
 		float ydistance = target.transform.position.y - transform.position.y;

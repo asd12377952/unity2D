@@ -6,7 +6,7 @@ using System.IO;
 public class levelManager : MonoBehaviour {
 
 	public string nextLevel;
-		
+
 	void Start () {
 		gameObject.SetActive(false);
 	}
@@ -14,7 +14,7 @@ public class levelManager : MonoBehaviour {
 	void OnTriggerEnter (Collider other){
 		if(other.tag == "Player"){
 			PlayerPrefs.SetString("savedLevel", nextLevel);
-			GameData.exppoint +=15;
+			GameData.exppoint +=10;
 			/*PlayerPrefs.SetInt("hp",GameData.hp);
 			PlayerPrefs.SetFloat("damage", GameData.damage);
 			PlayerPrefs.SetInt("def", GameData.def);

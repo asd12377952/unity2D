@@ -18,20 +18,21 @@ public class _exp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        exp.sizeDelta = new Vector2(GameData.exp, exp.sizeDelta.y);
-        if(GameData.exp>=250){
-            GameData.exp -=250;
-            lv_up();
-        }
-    }
-    void lv_up(){
         if(GameData.lv<15){
-            GameData.lv+=1;
-            lv.GetComponent<TextMeshProUGUI>().text="LV"+GameData.lv;
-            GameData.point+=1;
+            exp.sizeDelta = new Vector2(GameData.exp, exp.sizeDelta.y);
+            if(GameData.exp>=250){
+                GameData.exp -=250;
+                lv_up();
+            }
         }
         else{
-            lv.GetComponent<TextMeshProUGUI>().text="LVMAX";
+            exp.sizeDelta = new Vector2(250, exp.sizeDelta.y);
         }
+
+    }
+    void lv_up(){
+        GameData.lv+=1;
+        GameData.point+=1;
+        lv.GetComponent<TextMeshProUGUI>().text="LV"+GameData.lv;
     }
 }
