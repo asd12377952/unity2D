@@ -17310,11 +17310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5467818463038915624, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.97
+      value: 241.02
       objectReference: {fileID: 0}
     - target: {fileID: 5467818463038915624, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.96
+      value: 36.98
       objectReference: {fileID: 0}
     - target: {fileID: 5467818463038915624, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17349,8 +17349,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5467818463038915625, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
+      propertyPath: bulletX
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5467818463038915625, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
+      propertyPath: bulletY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5467818463038915625, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
       propertyPath: shuttime
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5467818463038915625, guid: 42a87f8c3552ff4468f3eff60a28c7ed, type: 3}
       propertyPath: enemyBullet
@@ -24064,7 +24072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843339531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 221.90388, y: -0.95388484, z: 0}
+  m_LocalPosition: {x: 232.18, y: -1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
