@@ -1,12 +1,12 @@
 {
-    "hp": 250,
+    "hp": 180,
     "jumpTwice": 1,
     "twiceshoot": 1,
-    "damage": 2.0,
-    "bulletLife": 0.6000000238418579,
-    "def": 25,
-    "lv": 15,
-    "exp": 2095,
+    "damage": 2.000000238418579,
+    "bulletLife": 0.30000001192092898,
+    "def": 10,
+    "lv": 7,
+    "exp": 180,
     "point": 0,
-    "exppoint": 75
+    "exppoint": 35
 }

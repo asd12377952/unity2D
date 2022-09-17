@@ -85,6 +85,9 @@ public class _001guy : MonoBehaviour {
 					i += 1;
 				}
 			}
+			else{
+				rend.sprite = shoot[1];
+			}
 			//當距離足夠時才會發射子彈
 			if(distance < 10 && shooting == false){
 				StartCoroutine(shootBullet());
