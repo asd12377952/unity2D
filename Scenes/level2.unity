@@ -21938,6 +21938,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u8E29\u8E0F\u77F3\u584A"
       objectReference: {fileID: 0}
+    - target: {fileID: 5335073114377499054, guid: 66fe1262e1586cb49961227f63c4d84b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335073114377499054, guid: 66fe1262e1586cb49961227f63c4d84b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5335073114377499055, guid: 66fe1262e1586cb49961227f63c4d84b, type: 3}
       propertyPath: m_RootOrder
       value: 2

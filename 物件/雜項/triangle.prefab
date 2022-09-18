@@ -129,4 +129,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  bulletLife: 1
+  bulletLife: 5
