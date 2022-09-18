@@ -13,6 +13,8 @@ public class menu : MonoBehaviour {
 	private bool canContinue = true;
 	private Data MyData;
 	private string LoadData;
+	private string str = System.Environment.CurrentDirectory;
+	private string path;
 	
 	void Start () {
 		string checkLevelName = PlayerPrefs.GetString("savedLevel");
@@ -21,6 +23,7 @@ public class menu : MonoBehaviour {
 		}
 		start.onClick.AddListener(() => onStart());
 		_continue.onClick.AddListener(() => oncontinue());
+		path = str + @"\json1";
 	}
 	//按鈕內sendMessageUp輸入startGame後按下按鈕會到Level1
 	void  onStart() {
@@ -32,7 +35,12 @@ public class menu : MonoBehaviour {
 	void oncontinue () {
 		if(canContinue){
 			string levelName = PlayerPrefs.GetString("savedLevel");
-			LoadData = File.ReadAllText("C:/Users/asd12/My project/Assets/json1");
+			
+			/*StreamReader file = new StreamReader("C:/Player1.txt");
+			LoadData =file.ReadToEnd();
+			file.Close();*/
+
+			LoadData = File.ReadAllText(path);
 			MyData = JsonUtility.FromJson<Data>(LoadData);
 			GameData.hp = MyData.hp;
 			GameData.jumpTwice = MyData.jumpTwice;

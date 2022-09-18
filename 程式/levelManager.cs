@@ -6,9 +6,12 @@ using System.IO;
 public class levelManager : MonoBehaviour {
 
 	public string nextLevel;
+	private string str = System.Environment.CurrentDirectory;
+	private string path;
 
 	void Start () {
 		gameObject.SetActive(false);
+		path = str + @"\json1";
 	}
 	//檢查是否碰到玩家，如果碰到標籤為Player的物件時要前進至下一個設定的關卡
 	void OnTriggerEnter (Collider other){
@@ -39,8 +42,13 @@ public class levelManager : MonoBehaviour {
 				exppoint = GameData.exppoint,
         	};
 			string jsonInfo = JsonUtility.ToJson(newData,true);
-        	File.WriteAllText("C:/Users/asd12/My project/Assets/json1", jsonInfo);
+        	File.WriteAllText(path , jsonInfo);
         	Debug.Log("寫入完成");
+			
+			/*StreamWriter file = new StreamWriter(@"C:/Player1.txt",false);
+			file.Write(jsonInfo);
+			file.Close();*/
+
 			SceneManager.LoadScene(nextLevel);
 		}
 	}
