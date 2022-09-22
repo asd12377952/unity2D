@@ -24843,8 +24843,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7866912178926496961, guid: b7234afc93fb2a944a9d65161f18fcca, type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866912178926496961, guid: b7234afc93fb2a944a9d65161f18fcca, type: 3}
       propertyPath: m_Center.y
       value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866912178926496961, guid: b7234afc93fb2a944a9d65161f18fcca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7866912178926496964, guid: b7234afc93fb2a944a9d65161f18fcca, type: 3}
       propertyPath: m_Name

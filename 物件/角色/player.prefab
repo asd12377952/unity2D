@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6667416254259817943}
   - component: {fileID: 2923277288203975933}
   - component: {fileID: 899542763301985967}
+  - component: {fileID: 2061289302837268619}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -258,13 +259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4ca467e9f6d214f9e5706d669a636f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts: 3
   hitSound: {fileID: 8300000, guid: a0bdcdaff061e0041ad5bbc44fcc7808, type: 3}
   deathAnim: {fileID: 2460859574921959291, guid: f189c2e90aead3940b92e340c8b8176c, type: 3}
   heartSound: {fileID: 8300000, guid: 1c473476382e99f448dbd63b7ca93198, type: 3}
   HealthBar: {fileID: 0}
   Hurt: {fileID: 0}
-  currentHealth: 250
 --- !u!114 &899542763301985967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +282,22 @@ MonoBehaviour:
   bulletsFirerate: 0.6
   spawnPosition: {fileID: 8794308086856360084}
   bulletSound: {fileID: 8300000, guid: e493003e255ce4c4cafafcc85a1add04, type: 3}
+--- !u!54 &2061289302837268619
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8113497862031655452}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 72
+  m_CollisionDetection: 0
 --- !u!1 &8794308086856360087
 GameObject:
   m_ObjectHideFlags: 0
