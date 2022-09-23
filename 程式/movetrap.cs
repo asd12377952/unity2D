@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class movetrap : MonoBehaviour
 {
-    public int x;
-    public int y;
-    public float speed;
+    public float x;
+    public float y;
     public float life;
+    public bool Rotate =false;
 
     private float lifeCounter = 0.0f;
     // Start is called before the first frame update
@@ -24,7 +24,11 @@ public class movetrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Translate(new Vector3(-1, 0, 0) * Time.deltaTime * speed) ;
+        gameObject.transform.position += new Vector3(x, y, 0) ;
+        if(Rotate){
+            transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), 360 * Time.deltaTime * 1);
+        }
+        
         lifeCounter += Time.deltaTime;
 		
 		//如果計數器大於設定的秒速(目前設定為1秒)就要毀掉這個物件
