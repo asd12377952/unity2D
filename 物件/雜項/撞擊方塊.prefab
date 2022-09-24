@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1682303840993933873}
   - component: {fileID: 1682303840993933874}
   - component: {fileID: 198162360517323095}
-  - component: {fileID: 4230189731664364357}
-  - component: {fileID: 3299042438379650402}
   - component: {fileID: 7551070496617345467}
+  - component: {fileID: -6564000795059651274}
+  - component: {fileID: -3725737385177352570}
   m_Layer: 0
   m_Name: "\u649E\u64CA\u65B9\u584A"
   m_TagString: box
@@ -101,7 +101,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4230189731664364357
+--- !u!135 &7551070496617345467
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682303840993933875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6564000795059651274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682303840993933875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96c94a88f5c8884f9a625a2577b481e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxLife: 10
+--- !u!54 &-3725737385177352570
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,31 +141,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 108
+  m_Constraints: 72
   m_CollisionDetection: 0
---- !u!114 &3299042438379650402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682303840993933875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a96c94a88f5c8884f9a625a2577b481e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxLife: 10
---- !u!135 &7551070496617345467
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682303840993933875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 0}

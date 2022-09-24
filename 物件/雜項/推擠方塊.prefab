@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4580616387346364768}
   - component: {fileID: 4580616387346364771}
   - component: {fileID: 3028991420805933574}
+  - component: {fileID: 8821591988719051722}
   - component: {fileID: 9059274105170869073}
+  - component: {fileID: -4501378620167238772}
   m_Layer: 0
   m_Name: "\u63A8\u64E0\u65B9\u584A"
   m_TagString: box
@@ -97,7 +99,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 10}
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &8821591988719051722
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580616387346364770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9059274105170869073
 MonoBehaviour:
@@ -111,6 +126,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9de7e755e9d72942bcfe72ee5ce904b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: -0.1
+  x: -0.4
   y: 0
   life: 5
+  Rotate: 0
+--- !u!54 &-4501378620167238772
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580616387346364770}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -36,4 +36,9 @@ public class movetrap : MonoBehaviour
 			Destroy(gameObject);
 		}
     }
+    void OnTriggerEnter (Collider other){
+		if(other.tag == "box"){
+			Destroy(gameObject);
+		}
+	}
 }
