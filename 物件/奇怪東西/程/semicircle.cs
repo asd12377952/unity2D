@@ -28,7 +28,7 @@ public class semicircle : MonoBehaviour
             transform.RotateAround(Pos, new Vector3(0, 0, 1), 360 * Time.deltaTime * speed);
         }
 
-        if(transform.localEulerAngles.z >20 && transform.localEulerAngles.z<160 && counter>=2.0f){
+        if(transform.localEulerAngles.z >20 && transform.localEulerAngles.z<160 && counter>2.0f){
             i = -i;
             Debug.Log(transform.localEulerAngles);
             counter=0.0f;

@@ -14,5 +14,6 @@ public static class GameData
     public static int exp = 0;
     public static int point = 1;
     public static int exppoint = 15;
+    public static bool bosslevel = false;
 }
 
