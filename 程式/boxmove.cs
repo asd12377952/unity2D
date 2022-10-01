@@ -8,7 +8,6 @@ public class boxmove : MonoBehaviour
 	public float boxLife = 0.6f;
 	//計數器與變量
 	private float lifeCounter = 0.0f;
-
 	
 	void Update () {
 		//加上計數器的變量

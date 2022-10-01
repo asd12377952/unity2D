@@ -11,7 +11,7 @@ public class emenyHp : MonoBehaviour
     
 	void Start ()
 	{
-
+		
 	}
 	void Update ()
 	{

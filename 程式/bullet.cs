@@ -9,6 +9,7 @@ public class bullet : MonoBehaviour {
 	private float damage = GameData.damage;
 	private int i =0;
 
+
 	void start(){
 		damage = GameData.damage;
 		bulletLife = GameData.bulletLife;

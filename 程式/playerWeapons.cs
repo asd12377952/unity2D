@@ -32,7 +32,6 @@ public class playerWeapons : MonoBehaviour {
 	private bool dead = false;
 	private int twiceshoot = GameData.twiceshoot;
 
-
 	void Start () {
 		updateBulletType();
 	}

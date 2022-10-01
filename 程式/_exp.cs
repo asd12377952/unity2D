@@ -28,7 +28,6 @@ public class _exp : MonoBehaviour
         else{
             exp.sizeDelta = new Vector2(250, exp.sizeDelta.y);
         }
-
     }
     void lv_up(){
         GameData.lv+=1;
