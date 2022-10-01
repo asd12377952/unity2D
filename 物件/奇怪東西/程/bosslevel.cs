@@ -10,8 +10,8 @@ public class bosslevel : MonoBehaviour
     {
         target = GameObject.Find("player");
         if(GameData.bosslevel){
-            gameObject.transform.localPosition = new Vector3(2.1f, 2.3f, 0);
-            target.transform.position = transform.position;
+            gameObject.transform.localPosition = new Vector3(271, 61, 0);
+            target.transform.position = new Vector3(0, 0.1f, 0);
         }
     }
 
