@@ -60,6 +60,7 @@ public class playerHealth : MonoBehaviour {
 			canGetHurt = false;
 			GetComponent<AudioSource>().PlayOneShot(hitSound);
 			GameData.hp -= (amount-def);
+			GameData.score -= 1;
 			StartCoroutine(checkHealth());
 			StartCoroutine(resetCanHurt());
 		}
@@ -73,6 +74,7 @@ public class playerHealth : MonoBehaviour {
 				canGetHurt = false;
 				GetComponent<AudioSource>().PlayOneShot(hitSound);
 				GameData.hp -= (50-def);
+				GameData.score -= 1;
 				StartCoroutine(checkHealth());
 				StartCoroutine(resetCanHurt());
 			}

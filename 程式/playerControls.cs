@@ -140,6 +140,8 @@ public class playerControls : MonoBehaviour {
 		canControl = false;
 		vel.x = 0;
 		GameData.exp =0;
+		GameData.score -= 5;
+
 	}
 	void jump(){
 		jumpTwice = GameData.jumpTwice;

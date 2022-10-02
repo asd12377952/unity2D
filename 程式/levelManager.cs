@@ -17,7 +17,7 @@ public class levelManager : MonoBehaviour {
 	void OnTriggerEnter (Collider other){
 		if(other.tag == "Player"){
 			PlayerPrefs.SetString("savedLevel", nextLevel);
-			GameData.exppoint +=10;
+			GameData.exppoint +=15;
 			/*PlayerPrefs.SetInt("hp",GameData.hp);
 			PlayerPrefs.SetFloat("damage", GameData.damage);
 			PlayerPrefs.SetInt("def", GameData.def);
@@ -40,6 +40,8 @@ public class levelManager : MonoBehaviour {
 				exp = GameData.exp,
 				point = GameData.point,
 				exppoint = GameData.exppoint,
+				bosslevel = GameData.bosslevel,
+				score = GameData.score,
         	};
 			string jsonInfo = JsonUtility.ToJson(newData,true);
         	File.WriteAllText(path , jsonInfo);
@@ -64,4 +66,6 @@ public class Data{
     public int exp;
     public int point;
 	public int exppoint;
+	public bool bosslevel;
+	public int score;
 }
