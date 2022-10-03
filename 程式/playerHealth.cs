@@ -45,6 +45,10 @@ public class playerHealth : MonoBehaviour {
 
         }
 		def = GameData.def;
+		if(GameData.score<0)
+		{
+			GameData.score=0;
+		}
 
     }
 	void Start () {

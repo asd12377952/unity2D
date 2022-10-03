@@ -27,6 +27,18 @@ public class menu : MonoBehaviour {
 	}
 	//按鈕內sendMessageUp輸入startGame後按下按鈕會到Level1
 	void  onStart() {
+		GameData.hp = 250;
+		GameData.jumpTwice = 0;
+		GameData.twiceshoot = 0;
+		GameData.damage = 1.0f;
+		GameData.bulletLife = 0.3f;
+		GameData.def = 0;
+		GameData.lv = 1;
+		GameData.exp = 0;
+		GameData.point = 1;
+		GameData.exppoint = 15;
+		GameData.bosslevel = false;
+		GameData.score = 100;
 		PlayerPrefs.DeleteAll();
 		SceneManager.LoadScene("level1");
 	}
