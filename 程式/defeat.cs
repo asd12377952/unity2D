@@ -10,8 +10,6 @@ public class defeat : MonoBehaviour
     void Start()
     {
         defeatWindow.gameObject.SetActive(false);
-        Time.timeScale = 1;
-
     }
     void Update()
     {

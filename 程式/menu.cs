@@ -17,6 +17,7 @@ public class menu : MonoBehaviour {
 	private string path;
 	
 	void Start () {
+		Time.timeScale = 1;
 		string checkLevelName = PlayerPrefs.GetString("savedLevel");
 		if(checkLevelName == null || checkLevelName == ""){
 			canContinue = false;
