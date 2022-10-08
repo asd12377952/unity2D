@@ -42,6 +42,8 @@ public class levelManager : MonoBehaviour {
 				exppoint = GameData.exppoint,
 				bosslevel = GameData.bosslevel,
 				score = GameData.score,
+			    stoplevel = GameData.stoplevel,
+
         	};
 			string jsonInfo = JsonUtility.ToJson(newData,true);
         	File.WriteAllText(path , jsonInfo);
@@ -68,4 +70,5 @@ public class Data{
 	public int exppoint;
 	public bool bosslevel;
 	public int score;
+	public bool stoplevel;
 }

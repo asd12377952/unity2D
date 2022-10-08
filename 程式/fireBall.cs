@@ -18,7 +18,7 @@ public class fireBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Pos = gameObject.transform.position;
+        //Pos = gameObject.transform.position;
         transform.RotateAround(Pos, new Vector3(0, 0, 1), 360 * Time.deltaTime * speed);
     }
     void OnTriggerEnter (Collider other){

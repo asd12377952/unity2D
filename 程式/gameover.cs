@@ -11,7 +11,10 @@ public class gameover : MonoBehaviour
     void Start()
     {
         
-        if(GameData.score==100){
+    }
+    void Update()
+    {
+        if(GameData.score>=100){
             text="PERFECT CLEAR";
         }
         else if(GameData.score>=80){

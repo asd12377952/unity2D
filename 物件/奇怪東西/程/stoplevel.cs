@@ -5,9 +5,9 @@ using System.IO;
 using UnityEngine.SceneManagement;
 
 
-public class bosslevel : MonoBehaviour
+public class stoplevel : MonoBehaviour
 {
-    public GameObject n1,n2;
+    public GameObject up;
     private GameObject target;
     private string str = System.Environment.CurrentDirectory;
 	private string path;
@@ -16,22 +16,20 @@ public class bosslevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        n1.SetActive(false);
-        n2.SetActive(false);
+        up.SetActive(false);
         path = str + @"\json1";
         target = GameObject.Find("player");
-        if(GameData.bosslevel){
+        if(GameData.stoplevel){
             gameObject.transform.localPosition = new Vector3(2.1f, 0, 0);
-            target.transform.position = new Vector3(271, 61, 0);
+            target.transform.position = new Vector3(137.2f, 28, 0);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(GameData.bosslevel){
-            n1.SetActive(true);
-            n2.SetActive(true);
+        if(GameData.stoplevel || GameData.bosslevel){
+            up.SetActive(true);
         }
         if(go && transform.localPosition.y<=2.3f){
             gameObject.transform.position += new Vector3(0, 0.1f, 0);
@@ -39,8 +37,8 @@ public class bosslevel : MonoBehaviour
     }
     void OnTriggerEnter (Collider other){
 		if(other.tag == "Player"){
-            GameData.bosslevel = true;
-            GameData.stoplevel = false;
+            GameData.stoplevel = true;
+            GameData.bosslevel = false;
             go= true;
             PlayerPrefs.SetString("savedLevel", SceneManager.GetActiveScene().name);
             Data newData = new Data
@@ -58,7 +56,6 @@ public class bosslevel : MonoBehaviour
 				bosslevel = GameData.bosslevel,
 				score = GameData.score,
                 stoplevel = GameData.stoplevel,
-
         	};
 			string jsonInfo = JsonUtility.ToJson(newData,true);
         	File.WriteAllText(path , jsonInfo);

@@ -17,7 +17,7 @@ public class cameraFollow : MonoBehaviour {
 	
 	void Start () {
 		QualitySettings.vSyncCount = 0;   // 把垂直同步關掉
-    	Application.targetFrameRate = 30;
+    	Application.targetFrameRate = 60;
 		if(target == null){
 			target = GameObject.Find("Player");
 		}
